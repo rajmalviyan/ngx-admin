@@ -9,7 +9,7 @@ export class UserService extends UserData {
 
   private users = {
     raj: { name: 'Raj-D Kumar', picture: 'assets/images/raj.png' },
-    nick: { name: 'Nick Jones', picture: 'assets/images/nick.png' },
+    nick: { name: 'Raj-D Kumar', picture: 'assets/images/raj-2.png' },
     eva: { name: 'Eva Moor', picture: 'assets/images/eva.png' },
     jack: { name: 'Jack Williams', picture: 'assets/images/jack.png' },
     lee: { name: 'Lee Wong', picture: 'assets/images/lee.png' },
@@ -22,6 +22,7 @@ export class UserService extends UserData {
     work: 'work',
   };
   private contacts: Contacts[] = [
+    { user: this.users.raj, type: this.types.mobile },
     { user: this.users.nick, type: this.types.mobile },
     { user: this.users.eva, type: this.types.home },
     { user: this.users.jack, type: this.types.mobile },
@@ -30,6 +31,7 @@ export class UserService extends UserData {
     { user: this.users.kate, type: this.types.work },
   ];
   private recentUsers: RecentUsers[]  = [
+    { user: this.users.raj, type: this.types.home, time: this.time.setHours(22, 12)},
     { user: this.users.alan, type: this.types.home, time: this.time.setHours(21, 12)},
     { user: this.users.eva, type: this.types.home, time: this.time.setHours(17, 45)},
     { user: this.users.nick, type: this.types.mobile, time: this.time.setHours(5, 29)},
